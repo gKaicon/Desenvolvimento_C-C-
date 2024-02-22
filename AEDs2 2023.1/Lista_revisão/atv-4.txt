@@ -1,0 +1,95 @@
+vetor de tamanho = 9
+
+a[0] = André - 4
+a[1] = Jonas  - 3
+a[2] = Juliana - 6.7
+a[3] = Mariana - 5
+a[4] = Ana - 10
+a[5] = Lúcia - 9.3
+a[6] = Paulo - 9
+a[7] = Carlos - 8.5
+a[8] = Gui - 7
+
+Irei pegar somente as notas, e o vetor será como na ordem apresentada. 
+Pivô à esquerda
+
+a[0] = 4
+a[1] = 3
+a[2] = 6.7
+a[3] = 5
+a[4] = 10
+a[5] = 9.3
+a[6] = 9
+a[7] = 8.5
+a[8] = 7
+
+a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]
+4     3     6.7   5     10    9.3   9     8.5   7
+4 > 7? não
+4 > 8.5? não
+4 > 9? não
+4 > 9.3? não
+4 > 10? não
+4 > 5? não
+4 > 6.7? não
+4 > 3? Sim, troca
+
+
+a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]
+3     4     6.7   5     10    9.3   9     8.5   7
+4-> está ordenado
+3 > 4? não
+3-> está ordenado
+
+a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]
+3     4     6.7   5     10    9.3   9     8.5   7
+6.7 > 5? Sim, troca
+
+a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]
+3     4     5     6.7   10    9.3   9     8.5   7
+6.7 > 10? Não
+6.7 > 9.3? Não
+6.7 > 9? Não
+6.7 > 8.5? Não
+6.7 > 7? Não
+6.7-> está ordenado
+
+a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]
+3     4     5     6.7   10    9.3   9     8.5   7
+10 > 7? Sim, troca
+
+a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]
+3     4     5     6.7   7    9.3   9     8.5   10
+10 > 9.3? Sim 
+10 > 9? Sim
+10 > 8.5? Sim
+10->está ordenado, pois ele está na ultima posição e não há ninguém maior que ele
+
+a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]
+3     4     5     6.7   7    9.3   9     8.5   10
+7 > 9.3? Não
+7 > 9? Não
+7 > 8.5? Não
+7 > 10? Não
+7->está ordenado, pois não há ninguém menor que ele
+
+a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]
+3     4     5     6.7   7    9.3   9     8.5   10
+9.3 > 9? Sim, troca
+
+a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]
+3     4     5     6.7   7     9     9.3   8.5   10
+9.3 > 8.5? Sim, troca
+
+a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]
+3     4     5     6.7   7     9     8.5   9.3   10
+9.3-> está ordenado
+
+a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]
+3     4     5     6.7   7     9     8.5   9.3   10
+9 > 8.5? Sim, troca
+
+a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]
+3     4     5     6.7   7     8.5   9     9.3   10
+9-> está ordenado
+O 8.5 não precisa ser comparado com mais ninguém, logo também está ordenado

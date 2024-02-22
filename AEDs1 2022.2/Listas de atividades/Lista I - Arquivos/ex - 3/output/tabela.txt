@@ -1,0 +1,10 @@
+Num: 78	 | 	Binário: 01001110
+Num: 90	 | 	Binário: 01011010
+Num: 63	 | 	Binário: 00111111
+Num: 38	 | 	Binário: 00100110
+Num: 54	 | 	Binário: 00110110
+Num: 59	 | 	Binário: 00111011
+Num: 34	 | 	Binário: 00100010
+Num: 80	 | 	Binário: 01010000
+Num: 74	 | 	Binário: 01001010
+Num: 74	 | 	Binário: 01001010

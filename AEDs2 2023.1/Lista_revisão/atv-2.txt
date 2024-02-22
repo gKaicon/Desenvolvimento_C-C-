@@ -1,0 +1,81 @@
+BubbleSort
+
+[20, 14, 5, 2]
+
+1° Iteração
+
+20, 14, 5, 2
+20 14 = +1comp, +1troca
+14 20 5 2
+
+2° Iteração
+
+14, 20, 5, 2
+20 5 = +1comp, +1troca
+
+14, 5, 20, 2
+
+3° Iteração
+
+14, 5, 20, 2
+20 2 = +1comp, +1troca
+14, 5, 2, 20
+
+4° Iteração
+
+14, 5, 2, 20
+14 5 = +1comp, +1troca
+5, 14, 2, 20
+
+5° Iteração
+
+5, 14, 2, 20
+14, 2 = +1comp, +1troca
+5, 2, 14, 20
+
+6° Iteração
+5, 2, 14, 20
+14, 20 = +1comp
+
+7° iteração
+5, 2, 14, 20
+5, 2 = +1comp, +1troca
+2, 5, 14, 20
+
+8° Iteração
+2, 5, 14, 20
+5 14 = +1comp
+
+Sem o código que fiz em sala, temos comp = 8, troca = 6
+
+Com o código que fiz em sala, ele evita comparações redundantes, como comparar o ultimo com penultimo
+temos comp = 8, troca = 6
+
+Código: 
+
+void BubbleSortCrescente(int Lista[], int tamanho){
+    int aux, contTrocas = 0, comparacao = 0;
+    bool troca;
+
+    for (int i = 0; i < tamanho - 1; i++){
+        troca = false;
+        for (int j = 1; j < tamanho - i; j++){
+            comparacao++;
+            if (Lista[j] < Lista[j - 1]){
+                aux = Lista[j];
+                Lista[j] = Lista[j - 1];
+                Lista[j - 1] = aux;
+                troca = true;
+                contTrocas++;
+            }
+        }
+        if(troca == false){
+            break;
+        }
+    }
+    imprimeVetor(Lista, tamanho);
+    cout << "Trocas:" << contTrocas << endl;
+    cout << "Comparacoes:" << comparacao << endl;
+}
+
+

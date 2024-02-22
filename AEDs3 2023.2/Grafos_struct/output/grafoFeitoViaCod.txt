@@ -1,0 +1,13 @@
+direcionado=sim
+5
+0 21 13 Bethoven
+1 0 0 
+2 41 26 
+3 0 0 Bukwoski
+4 0 0 
+5
+0 1 23
+2 3 45
+3 2 32
+4 0 85
+4 3 21

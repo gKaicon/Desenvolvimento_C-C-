@@ -1,0 +1,27 @@
+Mergesort
+
+vetor = [38 27 43 3 9 82 10]
+
+intercalação{
+
+38 27 43     3 9 82 10
+
+38      27 43           3 9     82 10
+
+38      27      43           3      9     82    10    --> neste ponto o código já sabe que não tem como separar mais, logo ele irá juntar
+
+}
+junção e comparação{
+
+1° -->      38      27, 43           3      9     82    10 -->compara o 23 com 43, e mantém
+
+2° -->      38      27, 43           3      9     82    10 -->compara o 38 com 27, e troca, depois compara o 38 com 43 e mantém
+
+3° -->      27, 38, 43         3, 9     82, 10 --> compara o 3 com 9, e mantém, depois compara o 82 com 10, e troca
+
+4° -->      27, 38, 43         3, 9     10, 82 --> compara o 3 com 10 e mantém, depois compara o 9 com 10, e mantém, e conclui que pode agrupar ordenado
+
+5° -->      27, 38, 43         3, 9, 10, 82 --> compara o 3 com 27 e troca, depois compara o 9 com 27 e troca, compara o 27 com o 10 e troca, 27 com 82, e mantém.
+                                                compara o 38 com 82 e mantém, compara o 43 com 82, e mantém, logo, está ordenado.
+}
+vetor ordenado = [3, 9, 10, 27, 38, 43, 82]
